@@ -227,6 +227,35 @@ body {
   color: #6c757d;
 }
 
+.form-floating > .form-control {
+  height: 5.5rem !important;
+  line-height: 1.25 !important;
+  padding: 1rem 0 !important;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label {
+  transform: scale(0.65) translateY(-0.5rem) translateX(0rem) !important;
+}
+
+.form-floating > .form-control:focus ~ label {
+  transform: scale(0.65) translateY(-0.5rem) translateX(0rem) !important;
+}
+
+textarea.form-control.is-invalid {
+  padding-right: calc(1.5em + 0.75rem) !important;
+  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem) !important;
+}
+
+.form-floating>.form-control:not(:placeholder-shown) {
+  padding-top: 2.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.form-floating > label {
+  padding: 1rem 0 !important;
+}
+
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
